@@ -4,7 +4,7 @@ This started as an EVE Online specific store for information and learnings so I 
 
 I play EVE Online... My charater is Wrdn and it is the primary use of my gaming machine.
 
-I also play other games, but with what I spend per month on EVE it always feels like a cop out to not play EVE.
+I also play other games, but with what I spend per month on EVE it always feels dirty playing other games.
 
 ## Great Communities
 
