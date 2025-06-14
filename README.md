@@ -4,7 +4,7 @@ Wrdn's move to Linux and how I won EVE by making it work better than Windows
 
 ### Great Communities
 
-[Eve on Linux](https://discord.gg/uYykxfw7ZH) a growing bunch of EVE enthusists working towards helping get people up and running on EVE
+Discord - [Eve on Linux](https://discord.gg/uYykxfw7ZH) a growing bunch of EVE enthusists working towards helping get people up and running on EVE
 
 
 
