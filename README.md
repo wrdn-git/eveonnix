@@ -8,8 +8,8 @@ I also play other games, but with what I spend per month on EVE it always feels 
 
 ## Great Communities
 
-*Discord - [Eve on Linux](https://discord.gg/uYykxfw7ZH) a growing bunch of EVE enthusists working towards helping get people up and running on EVE
-*Discord - [Linux Valhalla](https://discord.com/invite/DW2X8MHQuh) Home to Matts Creative. A community I've used extensively to get my feet under me with general Linux Stuff
+* Discord - [Eve on Linux](https://discord.gg/uYykxfw7ZH) a growing bunch of EVE enthusists working towards helping get people up and running on EVE
+* Discord - [Linux Valhalla](https://discord.com/invite/DW2X8MHQuh) Home to Matts Creative. A community I've used extensively to get my feet under me with general Linux Stuff
 
 ## Ramblings
 
