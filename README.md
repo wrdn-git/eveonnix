@@ -4,6 +4,8 @@ This started as an EVE Online specific store for information and learnings so I 
 
 I play EVE Online... My charater is Wrdn and it is the primary use of my gaming machine.
 
+Shameless Plug - [Use my recruitment link for 1M free skill points. ](https://www.eveonline.com/signup?invc=8521fd83-b94a-4433-9d34-76812f48b82d) Old and new players if you haven't used someoneelses!
+
 I also play other games, but with what I spend per month on EVE it always feels dirty playing other games.
 
 ## Great Communities
