@@ -1,4 +1,8 @@
-# Moving to Linux
+## backup.sh
+
+I've added a backup script to automate a major eve backup. Use at your own risk
+
+## Moving to Linux
 
 This started as an EVE Online specific store for information and learnings so I had a cental reference point. I now realise it can be more than that so Moving to Linux it becomes.
 
