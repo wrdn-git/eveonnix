@@ -17,10 +17,7 @@ TIMESTAMP=$(date +"%Y-%m-%d")
 BACKUP_DIR="${BACKUP_BASE_DIR}/${TIMESTAMP}"
 
 # Create the backup directory
-
 mkdir -p "${BACKUP_DIR}" || { echo "Error: Could not create backup directory."; exit 1; }
-
-# Example: Copy files to the backup directory
 
 # Home directory
 rsync -avzR ~/.jeveassets "${BACKUP_DIR}/"
