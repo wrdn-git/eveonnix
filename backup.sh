@@ -9,6 +9,9 @@ BACKUP_BASE_DIR="/mnt/dumpy/backup"
 # Define the base SteamLibrary path
 STEAM_BASE_DIR="/mnt/dumpy/SteamLibrary/steamapps"
 
+# Define the base Lutris path
+LUTRIS_BASE_DIR="/mnt/dumpy/Games"
+
 # Define the evetools folders
 EVE_TOOLS_DIR="/mnt/dumpy/evetools"
 
@@ -18,6 +21,10 @@ BACKUP_DIR="${BACKUP_BASE_DIR}/${TIMESTAMP}"
 
 # Create the backup directory
 mkdir -p "${BACKUP_DIR}" || { echo "Error: Could not create backup directory."; exit 1; }
+
+#Lutris Save Games
+#Cyberpunk 2077
+rsync -avzR "${STEAM_BASE_DIR}/gog/cyberpunk-2077/drive_c/users/wrdn/Saved Games/" "${BACKUP_DIR}/"
 
 # Home directory
 rsync -avzR ~/.jeveassets "${BACKUP_DIR}/"
