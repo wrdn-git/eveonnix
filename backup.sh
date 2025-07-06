@@ -24,7 +24,7 @@ mkdir -p "${BACKUP_DIR}" || { echo "Error: Could not create backup directory."; 
 
 #Lutris Save Games
 #Cyberpunk 2077
-rsync -avzR "${STEAM_BASE_DIR}/gog/cyberpunk-2077/drive_c/users/wrdn/Saved Games/" "${BACKUP_DIR}/"
+rsync -avzR "${LUTRIS_BASE_DIR}/gog/cyberpunk-2077/drive_c/users/wrdn/Saved Games/" "${BACKUP_DIR}/"
 
 # Home directory
 rsync -avzR ~/.jeveassets "${BACKUP_DIR}/"
