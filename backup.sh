@@ -4,16 +4,16 @@
 NETWORK_BACKUP_DIR="/mnt/dm-wrdn/backup"
 
 # Define the base backup directory
-BACKUP_BASE_DIR="/mnt/dumpy/backup"
+BACKUP_BASE_DIR="/mnt/dump/backup"
 
 # Define the base SteamLibrary path
-STEAM_BASE_DIR="/mnt/dumpy/SteamLibrary/steamapps"
+STEAM_BASE_DIR="/mnt/dump/SteamLibrary/steamapps"
 
 # Define the base Lutris path
-LUTRIS_BASE_DIR="/mnt/dumpy/Games"
+LUTRIS_BASE_DIR="/mnt/dump/Games"
 
 # Define the evetools folders
-EVE_TOOLS_DIR="/mnt/dumpy/evetools"
+EVE_TOOLS_DIR="/mnt/dump/evetools"
 
 # Generate the date-stamped directory name
 TIMESTAMP=$(date +"%Y-%m-%d")
