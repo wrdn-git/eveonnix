@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the network path for offload
-NETWORK_BACKUP_DIR="/mnt/dm-wrdn/backup"
+NETWORK_BACKUP_DIR="/mnt/dm-backup"
 
 # Define the base backup directory
 BACKUP_BASE_DIR="/mnt/dump/backup"
