@@ -10,10 +10,10 @@ BACKUP_BASE_DIR="/mnt/dump/backup"
 STEAM_BASE_DIR="/mnt/dump/SteamLibrary/steamapps"
 
 # Define the base Lutris path
-LUTRIS_BASE_DIR="/mnt/dump/Games"
+LUTRIS_BASE_DIR="/mnt/dump/games"
 
 # Define the evetools folders
-EVE_TOOLS_DIR="/mnt/dump/evetools"
+EVE_TOOLS_DIR="/mnt/dump/gametools"
 
 # Generate the date-stamped directory name
 TIMESTAMP=$(date +"%Y-%m-%d")
