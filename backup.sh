@@ -12,8 +12,8 @@ STEAM_BASE_DIR="/mnt/dump/SteamLibrary/steamapps"
 # Define the base Lutris path
 LUTRIS_BASE_DIR="/mnt/dump/games"
 
-# Define the evetools folders
-EVE_TOOLS_DIR="/mnt/dump/gametools"
+# Define the gametools folders
+GAME_TOOLS_DIR="/mnt/dump/gametools"
 
 # Generate the date-stamped directory name
 TIMESTAMP=$(date +"%Y-%m-%d")
@@ -23,8 +23,7 @@ BACKUP_DIR="${BACKUP_BASE_DIR}/${TIMESTAMP}"
 mkdir -p "${BACKUP_DIR}" || { echo "Error: Could not create backup directory."; exit 1; }
 
 #Lutris Save Games
-#Cyberpunk 2077
-rsync -avzR "${LUTRIS_BASE_DIR}/gog/cyberpunk-2077/drive_c/users/wrdn/Saved Games/" "${BACKUP_DIR}/"
+
 
 # Home directory
 rsync -avzR ~/.jeveassets "${BACKUP_DIR}/"
@@ -53,12 +52,19 @@ rsync -avzR ~/.local/share/pyfa.py "${BACKUP_DIR}/"
 # .local/state directory
 rsync -avzR ~/.local/state/dzgui "${BACKUP_DIR}/"
 
-# EVE Steam folders
-rsync -avzR "${STEAM_BASE_DIR}/compatdata/8500/pfx/drive_c/users/steamuser/AppData/Local/CCP/EVE" "${BACKUP_DIR}/"
-rsync -avzR "${STEAM_BASE_DIR}/compatdata/8500/pfx/drive_c/users/steamuser/AppData/Roaming/EVE Online" "${BACKUP_DIR}/"
+# Steam Game folders
+rsync -avzR "${STEAM_BASE_DIR}/eve-online/drive_c/users/wrdn/AppData/Local/CCP/EVE/" "${BACKUP_DIR}/"
+rsync -avzR "${STEAM_BASE_DIR}/eve-online/drive_c/users/wrdn/AppData/Roaming/EVE Online/" "${BACKUP_DIR}/"
 
-# evetools
-rsync -avzR ${EVE_TOOLS_DIR} "${BACKUP_DIR}/"
+# Lutris Game Folders
+# EVE Steam folders
+rsync -avzR "${LUTRIS_BASE_DIR}/compatdata/8500/pfx/drive_c/users/steamuser/AppData/Local/CCP/EVE" "${BACKUP_DIR}/"
+rsync -avzR "${LUTRIS_BASE_DIR}/compatdata/8500/pfx/drive_c/users/steamuser/AppData/Roaming/EVE Online" "${BACKUP_DIR}/"
+#Cyberpunk 2077
+rsync -avzR "${LUTRIS_BASE_DIR}/gog/cyberpunk-2077/drive_c/users/wrdn/Saved Games/" "${BACKUP_DIR}/"
+
+# Game tools
+rsync -avzR ${GAME_TOOLS_DIR} "${BACKUP_DIR}/"
 
 # compress it
 7z a -r "${BACKUP_DIR}.7z" ${BACKUP_DIR}
