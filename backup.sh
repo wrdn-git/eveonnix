@@ -53,18 +53,19 @@ rsync -avzR ~/.local/share/pyfa.py "${BACKUP_DIR}/"
 rsync -avzR ~/.local/state/dzgui "${BACKUP_DIR}/"
 
 # Steam Game folders
-rsync -avzR "${STEAM_BASE_DIR}/eve-online/drive_c/users/wrdn/AppData/Local/CCP/EVE/" "${BACKUP_DIR}/"
-rsync -avzR "${STEAM_BASE_DIR}/eve-online/drive_c/users/wrdn/AppData/Roaming/EVE Online/" "${BACKUP_DIR}/"
+rsync -avzR "${STEAM_BASE_DIR}/compatdata/8500/pfx/drive_c/users/steamuser/AppData/Local/CCP/EVE" "${BACKUP_DIR}/"
+rsync -avzR "${STEAM_BASE_DIR}/compatdata/8500/pfx/drive_c/users/steamuser/AppData/Roaming/EVE Online" "${BACKUP_DIR}/"
 
 # Lutris Game Folders
-# EVE Steam folders
-rsync -avzR "${LUTRIS_BASE_DIR}/compatdata/8500/pfx/drive_c/users/steamuser/AppData/Local/CCP/EVE" "${BACKUP_DIR}/"
-rsync -avzR "${LUTRIS_BASE_DIR}/compatdata/8500/pfx/drive_c/users/steamuser/AppData/Roaming/EVE Online" "${BACKUP_DIR}/"
+# EVE Lutris folders
+rsync -avzR "${LUTRIS_BASE_DIR}/eve-online/drive_c/users/wrdn/AppData/Local/CCP/EVE/" "${BACKUP_DIR}/"
+rsync -avzR "${LUTRIS_BASE_DIR}/eve-online/drive_c/users/wrdn/AppData/Roaming/EVE Online/" "${BACKUP_DIR}/"
+
 #Cyberpunk 2077
 rsync -avzR "${LUTRIS_BASE_DIR}/gog/cyberpunk-2077/drive_c/users/wrdn/Saved Games/" "${BACKUP_DIR}/"
 
 # Game tools
-rsync -avzR ${GAME_TOOLS_DIR} "${BACKUP_DIR}/"
+rsync -avzR --exclude-from 'exclude.txt' ${GAME_TOOLS_DIR} "${BACKUP_DIR}/"
 
 # compress it
 7z a -r "${BACKUP_DIR}.7z" ${BACKUP_DIR}
