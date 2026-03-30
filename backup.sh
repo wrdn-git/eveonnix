@@ -42,6 +42,7 @@ rsync -avzR ~/.config/dztui "${BACKUP_DIR}/"
 rsync -avzR ~/.config/fyne "${BACKUP_DIR}/"
 rsync -avzR ~/.config/Mumble "${BACKUP_DIR}/"
 rsync -avzR ~/.config/RIFT "${BACKUP_DIR}/"
+rsync -avzR ~/.config/eve-preview-manager "${BACKUP_DIR}/"
 
 # .local/share directory
 rsync -avzR ~/.local/share/dzgui "${BACKUP_DIR}/"
@@ -51,6 +52,7 @@ rsync -avzR ~/.local/share/pyfa.py "${BACKUP_DIR}/"
 
 # .local/state directory
 rsync -avzR ~/.local/state/dzgui "${BACKUP_DIR}/"
+rsync -avzR ~/.local/state/VSCodium "${BACKUP_DIR}/"
 
 # Steam Game folders
 rsync -avzR "${STEAM_BASE_DIR}/compatdata/8500/pfx/drive_c/users/steamuser/AppData/Local/CCP/EVE" "${BACKUP_DIR}/"
